@@ -432,51 +432,96 @@ p {
 }
 
 .html {
-	width:95%; 
-	-moz-animation: html 15s ease-out;
-	-webkit-animation: html 15s ease-out;
-	background-color: #334d66;
-}
-
-.css {
-	width:90%;
-	-moz-animation: css 15s ease-out;
-	-webkit-animation: css 15s ease-out;
+	width:50%; 
+	-moz-animation: html 5s ease-out;
+	-webkit-animation: html 5s ease-out;
 	background-color: #334d66;
 }
 
 .java {
-	width:55%;
-	-moz-animation: java 15s ease-out;
-	-webkit-animation: java 15s ease-out;
+	width:96%;
+	-moz-animation: java 5s ease-out;
+	-webkit-animation: java 5s ease-out;
 	background-color: #334d66;
 }
 
 .php {
-	width:65%;
-	-moz-animation: php 15s ease-out;
-	-webkit-animation: php 15s ease-out;
+	width:40%;
+	-moz-animation: php 5s ease-out;
+	-webkit-animation: php 5s ease-out;
 	background-color: #334d66;	
 }
 
-.psd {
+.haskell {
 	width:85%;
-	-moz-animation: psd 15s ease-out;
-	-webkit-animation: psd 15s ease-out;
+	-moz-animation: haskell 5s ease-out;
+	-webkit-animation: haskell 5s ease-out;
 	background-color: #334d66;	
 }
 
-@-moz-keyframes html {0%  { width:0px;} 100%{ width:95%;}  }
-@-moz-keyframes css        { 0%  { width:0px;} 100%{ width:90%;}  }
-@-moz-keyframes java      { 0%  { width:0px;} 100%{ width:55%;}  }
-@-moz-keyframes php   { 0%  { width:0px;} 100%{ width:65%;}  }
-@-moz-keyframes psd   { 0%  { width:0px;} 100%{ width:85%;}  }
+.prolog {
+	width:68%;
+	-moz-animation: prolog 5s ease-out;
+	-webkit-animation: prolog 5s ease-out;
+	background-color: #334d66;	
+}
 
-@-webkit-keyframes html       { 0%  { width:0px;} 100%{ width:95%;}  }
-@-webkit-keyframes css        { 0%  { width:0px;} 100%{ width:90%;}  }
-@-webkit-keyframes java      { 0%  { width:0px;} 100%{ width:55%;}  }
-@-webkit-keyframes php   { 0%  { width:0px;} 100% { width:65%;}  }
-@-webkit-keyframes psd   { 0%  { width:0px;} 100% { width:85%;}  }
+.cpp {
+	width:88%;
+	-moz-animation: cpp 5s ease-out;
+	-webkit-animation: cpp 5s ease-out;
+	background-color: #334d66;	
+}
+
+.sql {
+	width:62%;
+	-moz-animation: sql 5s ease-out;
+	-webkit-animation: sql 5s ease-out;
+	background-color: #334d66;	
+}
+
+.javascript {
+	width:72%;
+	-moz-animation: javascript 5s ease-out;
+	-webkit-animation: javascript 5s ease-out;
+	background-color: #334d66;	
+}
+
+.bash {
+	width:56%;
+	-moz-animation: bash 5s ease-out;
+	-webkit-animation: bash 5s ease-out;
+	background-color: #334d66;	
+}
+
+.python {
+	width:66%;
+	-moz-animation: python 5s ease-out;
+	-webkit-animation: python 5s ease-out;
+	background-color: #334d66;	
+}
+
+@-moz-keyframes java 			{ 0%  { width:0px;} 100%{ width:96%;}  }
+@-moz-keyframes haskell     	{ 0%  { width:0px;} 100%{ width:85%;}  }
+@-moz-keyframes prolog      	{ 0%  { width:0px;} 100%{ width:68%;}  }
+@-moz-keyframes cpp   			{ 0%  { width:0px;} 100%{ width:88%;}  }
+@-moz-keyframes php   			{ 0%  { width:0px;} 100%{ width:40%;}  }
+@-moz-keyframes sql				{ 0%  { width:0px;} 100%{ width:62%;}  }
+@-moz-keyframes html        	{ 0%  { width:0px;} 100%{ width:50%;}  }
+@-moz-keyframes javascript  	{ 0%  { width:0px;} 100%{ width:72%;}  }
+@-moz-keyframes bash   			{ 0%  { width:0px;} 100%{ width:56%;}  }
+@-moz-keyframes python   		{ 0%  { width:0px;} 100%{ width:66%;}  }
+
+@-webkit-keyframes java     	{ 0%  { width:0px;} 100%{ width:96%;}  }
+@-webkit-keyframes haskell  	{ 0%  { width:0px;} 100%{ width:85%;}  }
+@-webkit-keyframes prolog      	{ 0%  { width:0px;} 100%{ width:68%;}  }
+@-webkit-keyframes cpp   		{ 0%  { width:0px;} 100%{ width:88%;}  }
+@-webkit-keyframes php   		{ 0%  { width:0px;} 100%{ width:40%;}  }
+@-webkit-keyframes sql       	{ 0%  { width:0px;} 100%{ width:62%;}  }
+@-webkit-keyframes html        	{ 0%  { width:0px;} 100%{ width:50%;}  }
+@-webkit-keyframes javascript   { 0%  { width:0px;} 100%{ width:72%;}  }
+@-webkit-keyframes bash   		{ 0%  { width:0px;} 100%{ width:56%;}  }
+@-webkit-keyframes python   	{ 0%  { width:0px;} 100%{ width:66%;}  }
 
 
 /* #Portfolio */
