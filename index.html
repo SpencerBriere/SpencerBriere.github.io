@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<a href="http://spencerbriere.ca/project.html">Link to Info Vis project</a>
-<a href="http://spencerbriere.ca/redirect.html">Testing browser specific redirects</a>
-</body>
+	<body>
+		<h1>Testing Redirects</h1>
+	</body>
+
+	<script>
+		var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+		};
+	if( isMobile.any() ) { 
+		window.location = "http://www.spencerbriere.ca/mobile/";
+	} else {
+		window.location = "http://www.spencerbriere.ca/desktop/";
+	}
+	
+	</script>
 </html>
