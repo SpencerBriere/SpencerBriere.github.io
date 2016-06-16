@@ -42,6 +42,9 @@
       'second_ticks': secondTickCheckbox.checked == 'true' ? 1 : 0,
       'animations': animationsCheckbox.checked == 'true' ? 1 : 0
     };
+    
+    var tester = animationsCheckbox.checked == 'true' ? 1 : 0;
+    console.log(tester);
 
     // Determine the correct return URL (emulator vs real watch)
     function getQueryParam(variable, defaultValue) {
