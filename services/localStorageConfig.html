@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Example Configuration</title>
+    <title>Local Storage Configuration</title>
   </head>
   <body>
-    <p>This is an example HTML forms configuration page.</p>
+    <p>This is a test pebble configuration page for plainText local storage.</p>
   </body>
   
-  <input id='background_color_input' type='text' value='#000000'>
-    Background Color
+  <input id='plainText' type='text' value=''>
+    Plain Text
   </input>
-  <input id='foreground_color_input' type='text' value='#000000'>
-    Foreground Color
+  <input id='locked_checkbox' type='checkbox'>
+    Enable Lock
   </input>
   
-  <input id='second_tick_checkbox' type='checkbox'>
-    Enable Second Ticks
-  </input>
-  <input id='animations_checkbox' type='checkbox'>
-    Show Animations
-  </input>
   <input id='submit_button' type='button' value='Save'>
   
   <script>
@@ -30,22 +24,14 @@
   submitButton.addEventListener('click', function() {
     console.log("Save Button Clicked.");
     // Get the config data from the UI elements
-    var backgroundColor = document.getElementById('background_color_input');
-    var foregroundColor = document.getElementById('foreground_color_input');
-    var secondTickCheckbox = document.getElementById('second_tick_checkbox');
-    var animationsCheckbox = document.getElementById('animations_checkbox');
+    var plainText = document.getElementById('plainText');
+    var lockedCheckbox = document.getElementById('locked_checkbox');
 
     // Make a data object to be sent, coercing value types to integers
     var options = {
-      'background_color': backgroundColor.value,
-      'foreground_color': foregroundColor.value,
-      'second_ticks': secondTickCheckbox.checked == true ? 1 : 0,
-      'animations': animationsCheckbox.checked == true ? 1 : 0
+      'plainText': plainText.value,
+      'lockedCheckbox': lockedCheckbox.checked == true ? 1 : 0
     };
-    
-    var tester = animationsCheckbox.checked == true ? 1 : 0;
-    console.log(animationsCheckbox.checked);
-    console.log(tester);
 
     // Determine the correct return URL (emulator vs real watch)
     function getQueryParam(variable, defaultValue) {
