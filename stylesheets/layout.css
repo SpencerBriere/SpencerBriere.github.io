@@ -468,9 +468,15 @@ p {
 }
 
 .cpp {
-	width:88%;
+	width:80%;
 	-moz-animation: cpp 5s ease-out;
 	-webkit-animation: cpp 5s ease-out;
+	background-color: #334d66;	
+}
+.cs {
+	width:80%;
+	-moz-animation: cs 5s ease-out;
+	-webkit-animation: cs 5s ease-out;
 	background-color: #334d66;	
 }
 
@@ -505,7 +511,8 @@ p {
 @-moz-keyframes java 			{ 0%  { width:0px;} 100%{ width:96%;}  }
 @-moz-keyframes haskell     	{ 0%  { width:0px;} 100%{ width:85%;}  }
 @-moz-keyframes prolog      	{ 0%  { width:0px;} 100%{ width:68%;}  }
-@-moz-keyframes cpp   			{ 0%  { width:0px;} 100%{ width:88%;}  }
+@-moz-keyframes cpp   			{ 0%  { width:0px;} 100%{ width:80%;}  }
+@-moz-keyframes cs   			{ 0%  { width:0px;} 100%{ width:80%;}  }
 @-moz-keyframes php   			{ 0%  { width:0px;} 100%{ width:40%;}  }
 @-moz-keyframes sql				{ 0%  { width:0px;} 100%{ width:62%;}  }
 @-moz-keyframes html        	{ 0%  { width:0px;} 100%{ width:50%;}  }
@@ -516,7 +523,8 @@ p {
 @-webkit-keyframes java     	{ 0%  { width:0px;} 100%{ width:96%;}  }
 @-webkit-keyframes haskell  	{ 0%  { width:0px;} 100%{ width:85%;}  }
 @-webkit-keyframes prolog      	{ 0%  { width:0px;} 100%{ width:68%;}  }
-@-webkit-keyframes cpp   		{ 0%  { width:0px;} 100%{ width:88%;}  }
+@-webkit-keyframes cpp   		{ 0%  { width:0px;} 100%{ width:80%;}  }
+@-webkit-keyframes cs   		{ 0%  { width:0px;} 100%{ width:80%;}  }
 @-webkit-keyframes php   		{ 0%  { width:0px;} 100%{ width:40%;}  }
 @-webkit-keyframes sql       	{ 0%  { width:0px;} 100%{ width:62%;}  }
 @-webkit-keyframes html        	{ 0%  { width:0px;} 100%{ width:50%;}  }
