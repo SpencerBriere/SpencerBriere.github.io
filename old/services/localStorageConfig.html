@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local Storage Configuration</title>
+  </head>
+  <body>
+    <p>This is a test pebble configuration page for plainText local storage.</p>
+  </body>
+  
+  <input id='plainText' type='text' value=''>
+    Plain Text
+  </input>
+  <input id='locked_checkbox' type='checkbox'>
+    Enable Lock
+  </input>
+  
+  <input id='submit_button' type='button' value='Save'>
+  
+  <script>
+  // Get a handle to the button's HTML element
+  var submitButton = document.getElementById('submit_button');
+
+  // Add a 'click' listener
+  submitButton.addEventListener('click', function() {
+    console.log("Save Button Clicked.");
+    // Get the config data from the UI elements
+    var plainText = document.getElementById('plainText');
+    var lockedCheckbox = document.getElementById('locked_checkbox');
+
+    // Make a data object to be sent, coercing value types to integers
+    var options = {
+      'plainText': plainText.value,
+      'lockedCheckbox': lockedCheckbox.checked == true ? 1 : 0
+    };
+
+    // Determine the correct return URL (emulator vs real watch)
+    function getQueryParam(variable, defaultValue) {
+      var query = location.search.substring(1);
+      var vars = query.split('&');
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (pair[0] === variable) {
+          return decodeURIComponent(pair[1]);
+        }
+      }
+      return defaultValue || false;
+    }
+    var return_to = getQueryParam('return_to', 'pebblejs://close#');
+
+    // Encode and send the data when the page closes
+    document.location = return_to + encodeURIComponent(JSON.stringify(options));
+  });
+</script>
+  
+  
+</html>

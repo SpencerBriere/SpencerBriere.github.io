@@ -1,0 +1,16 @@
+<?php
+header("HTTP/1.1 503 Service Temporarily Unavailable");
+header("Status: 503 Service Temporarily Unavailable");
+header("Retry-After: 3600");
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>418 - I'm A Teapot</title>
+<meta name="robots" content="none" />
+</head>
+<body>
+<h1>418 - I'm A Teapot</h1>
+<p>The <strong><?php echo $_SERVER["SERVER_NAME"]; ?></strong> website is currently down. Will return to working order once I find some additional purpose for it.</p>
+<p>It likely won't be back for a while.</p>
+</body>
+</html>

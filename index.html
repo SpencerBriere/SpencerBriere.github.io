@@ -1,16 +1,50 @@
-<?php
-header("HTTP/1.1 503 Service Temporarily Unavailable");
-header("Status: 503 Service Temporarily Unavailable");
-header("Retry-After: 3600");
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>418 - I'm A Teapot</title>
-<meta name="robots" content="none" />
+  <title>SSH Client</title>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .terminal {
+      font-family: monospace;
+      color: white;
+      background: black;
+    }
+  </style>
 </head>
+
 <body>
-<h1>418 - I'm A Teapot</h1>
-<p>The <strong><?php echo $_SERVER["SERVER_NAME"]; ?></strong> website is currently down. Will return to working order once I find some additional purpose for it.</p>
-<p>It likely won't be back for a while.</p>
+  <h1>SSH</h1>
+
+  <div class="terminal">
+
+  </div>
+  <script>
+  // Connect to the socket.io server
+  var socket = io.connect('http://localhost:8080');
+
+  // Wait for data from the server
+  socket.on('output', function (data) {
+    // Insert some line breaks where they belong
+      data = data.replace("\n", "<br>");
+      data = data.replace("\r", "<br>");
+      // Append the data to our terminal
+      $('.terminal').append(data);
+  });
+
+  // Listen for user input and pass it to the server
+  $(document).on("keypress",function(e){
+    var char = "";
+    char = String.fromCharCode(e.which);
+
+    socket.emit("input", char);
+  });
+
+  </script>
 </body>
 </html>
