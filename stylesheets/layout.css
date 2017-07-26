@@ -433,7 +433,7 @@ p {
 }
 
 .html {
-	width:50%; 
+	width:80%; 
 	-moz-animation: html 5s ease-out;
 	-webkit-animation: html 5s ease-out;
 	background-color: #334d66;
@@ -454,48 +454,48 @@ p {
 }
 
 .haskell {
-	width:85%;
+	width:24%;
 	-moz-animation: haskell 5s ease-out;
 	-webkit-animation: haskell 5s ease-out;
 	background-color: #334d66;	
 }
 
 .prolog {
-	width:68%;
+	width:20%;
 	-moz-animation: prolog 5s ease-out;
 	-webkit-animation: prolog 5s ease-out;
 	background-color: #334d66;	
 }
 
 .cpp {
-	width:78%;
+	width:65%;
 	-moz-animation: cpp 5s ease-out;
 	-webkit-animation: cpp 5s ease-out;
 	background-color: #334d66;	
 }
 .cs {
-	width:83%;
+	width:75%;
 	-moz-animation: cs 5s ease-out;
 	-webkit-animation: cs 5s ease-out;
 	background-color: #334d66;	
 }
 
 .sql {
-	width:62%;
+	width:42%;
 	-moz-animation: sql 5s ease-out;
 	-webkit-animation: sql 5s ease-out;
 	background-color: #334d66;	
 }
 
 .javascript {
-	width:72%;
+	width:60%;
 	-moz-animation: javascript 5s ease-out;
 	-webkit-animation: javascript 5s ease-out;
 	background-color: #334d66;	
 }
 
 .bash {
-	width:56%;
+	width:30%;
 	-moz-animation: bash 5s ease-out;
 	-webkit-animation: bash 5s ease-out;
 	background-color: #334d66;	
@@ -503,6 +503,13 @@ p {
 
 .python {
 	width:66%;
+	-moz-animation: python 5s ease-out;
+	-webkit-animation: python 5s ease-out;
+	background-color: #334d66;	
+}
+
+.swift {
+	width:70%;
 	-moz-animation: python 5s ease-out;
 	-webkit-animation: python 5s ease-out;
 	background-color: #334d66;	
