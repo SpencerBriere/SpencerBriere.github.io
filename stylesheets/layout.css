@@ -515,29 +515,31 @@ p {
 	background-color: #334d66;	
 }
 
+@-moz-keyframes html        	{ 0%  { width:0px;} 100%{ width:80%;}  }
 @-moz-keyframes java 			{ 0%  { width:0px;} 100%{ width:96%;}  }
-@-moz-keyframes haskell     	{ 0%  { width:0px;} 100%{ width:85%;}  }
-@-moz-keyframes prolog      	{ 0%  { width:0px;} 100%{ width:68%;}  }
-@-moz-keyframes cpp   			{ 0%  { width:0px;} 100%{ width:78%;}  }
-@-moz-keyframes cs   			{ 0%  { width:0px;} 100%{ width:83%;}  }
 @-moz-keyframes php   			{ 0%  { width:0px;} 100%{ width:40%;}  }
-@-moz-keyframes sql				{ 0%  { width:0px;} 100%{ width:62%;}  }
-@-moz-keyframes html        	{ 0%  { width:0px;} 100%{ width:50%;}  }
-@-moz-keyframes javascript  	{ 0%  { width:0px;} 100%{ width:72%;}  }
-@-moz-keyframes bash   			{ 0%  { width:0px;} 100%{ width:56%;}  }
+@-moz-keyframes haskell     	{ 0%  { width:0px;} 100%{ width:24%;}  }
+@-moz-keyframes prolog      	{ 0%  { width:0px;} 100%{ width:20%;}  }
+@-moz-keyframes cpp   			{ 0%  { width:0px;} 100%{ width:65%;}  }
+@-moz-keyframes cs   			{ 0%  { width:0px;} 100%{ width:75%;}  }
+@-moz-keyframes sql				{ 0%  { width:0px;} 100%{ width:42%;}  }
+@-moz-keyframes javascript  	{ 0%  { width:0px;} 100%{ width:60%;}  }
+@-moz-keyframes bash   			{ 0%  { width:0px;} 100%{ width:30%;}  }
 @-moz-keyframes python   		{ 0%  { width:0px;} 100%{ width:66%;}  }
+@-moz-keyframes swift   		{ 0%  { width:0px;} 100%{ width:70%;}  }
 
+@-webkit-keyframes html        	{ 0%  { width:0px;} 100%{ width:80%;}  }
 @-webkit-keyframes java     	{ 0%  { width:0px;} 100%{ width:96%;}  }
-@-webkit-keyframes haskell  	{ 0%  { width:0px;} 100%{ width:85%;}  }
-@-webkit-keyframes prolog      	{ 0%  { width:0px;} 100%{ width:68%;}  }
-@-webkit-keyframes cpp   		{ 0%  { width:0px;} 100%{ width:78%;}  }
-@-webkit-keyframes cs   		{ 0%  { width:0px;} 100%{ width:83%;}  }
 @-webkit-keyframes php   		{ 0%  { width:0px;} 100%{ width:40%;}  }
-@-webkit-keyframes sql       	{ 0%  { width:0px;} 100%{ width:62%;}  }
-@-webkit-keyframes html        	{ 0%  { width:0px;} 100%{ width:50%;}  }
-@-webkit-keyframes javascript   { 0%  { width:0px;} 100%{ width:72%;}  }
-@-webkit-keyframes bash   		{ 0%  { width:0px;} 100%{ width:56%;}  }
+@-webkit-keyframes haskell  	{ 0%  { width:0px;} 100%{ width:24%;}  }
+@-webkit-keyframes prolog      	{ 0%  { width:0px;} 100%{ width:20%;}  }
+@-webkit-keyframes cpp   		{ 0%  { width:0px;} 100%{ width:65%;}  }
+@-webkit-keyframes cs   		{ 0%  { width:0px;} 100%{ width:75%;}  }
+@-webkit-keyframes sql       	{ 0%  { width:0px;} 100%{ width:42%;}  }
+@-webkit-keyframes javascript   { 0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes bash   		{ 0%  { width:0px;} 100%{ width:30%;}  }
 @-webkit-keyframes python   	{ 0%  { width:0px;} 100%{ width:66%;}  }
+@-webkit-keyframes swift	   	{ 0%  { width:0px;} 100%{ width:70%;}  }
 
 
 /* #Portfolio */
